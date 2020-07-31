@@ -3,9 +3,10 @@
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <!-- no need for click onSelect event since w e give link to the hero details so we removed that code -->
-    <a routerLink="/detail/{{ hero.id }}"></a>
-    <!-- toggle style of the selected hero with class binding -->
-    <span class="badge">{{ hero.id }}</span> {{ hero.name }}
+    <a routerLink="/detail/{{ hero.id }}">
+      <!-- toggle style of the selected hero with class binding -->
+      <span class="badge">{{ hero.id }}</span> {{ hero.name }}
+    </a>
   </li>
 </ul>
 
