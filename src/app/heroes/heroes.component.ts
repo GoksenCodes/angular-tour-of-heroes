@@ -15,7 +15,9 @@ export class HeroesComponent implements OnInit {
   // };
 
   heroes: Hero[];
-  selectedHero: Hero;
+
+  //this is a dead code, no more selectedHero
+  // selectedHero: Hero;
 
   //inject the hero service
   constructor(
@@ -27,10 +29,12 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`Heroes Component: Selected hero id ${hero.id}`);
-  }
+  //no more need for this method since we added routing to hero detail page.
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  //   this.messageService.add(`Heroes Component: Selected hero id ${hero.id}`);
+  // }
+
   //method that retrieve the heroes from the service
   // getHeroes(): void {
   //   this.heroes = this.heroService.getHeroes();
